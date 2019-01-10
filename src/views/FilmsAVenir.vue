@@ -11,6 +11,16 @@
                     </li>
                 </ul>
             </nav>
+            <div v-if="genres().length > 0">
+                <hr/>
+                Genres choisis:
+                <span v-for="genre in genres()" class="genre">
+                    #{{genre}}
+                </span>
+            </div>
+            <div v-else>
+                Choisissez des films sur l'autre page, le tri se fera ensuite par genres.
+            </div>
             <grid :films="films" />
         </div>
     </div>

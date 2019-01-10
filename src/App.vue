@@ -10,6 +10,7 @@
                         <router-link :to="{ name: 'upcoming' }">A venir</router-link>
                     </li>
                 </ul>
+                Guillaume Hochet
             </div>
         </nav>
         <router-view/>
